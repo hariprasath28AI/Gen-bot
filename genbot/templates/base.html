@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <!-- <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image"> -->
+                    <img src="static\images\logo-with-bg.png" alt="ChatBot">
+                </div>
+                <div class="chatbox__content--header">
+                    <!-- <h4 class="chatbox__heading--header">Chat support</h4> -->
+                    <!-- <p class="chatbox__description--header">Hi. How can I help you?</p> -->
+                    <h4 class="chatbox__heading--header">Blue</h4>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <div class="send-btn">
+                    <img src="static\images\icons8-sent-48 (2).png" alt="Send">
+
+                </div>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button>
+                <div class="chat-btn">
+                    <div style="display: block;" id="bot">
+                        <img src=".\static\images\logo-with-bg.png" width="40rem" height="40rem" style="border-radius: 112.5px;" />
+                    </div>
+                    <div style="display: none;" id="close">
+                        <img src=".\static\images\Close-btn.png" alt="Close">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+
+
+</body>
+</html>

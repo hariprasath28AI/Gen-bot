@@ -1,0 +1,16 @@
+Flask[async]
+openai
+openapi-schema-pydantic
+langchain == 0.0.256
+langcodes
+langsmith
+libclang
+faiss-cpu==1.7.4
+tiktoken
+flask_cors
+mysql-connector-python
+python-dotenv
+uuid
+requests
+asyncio
+httpx
